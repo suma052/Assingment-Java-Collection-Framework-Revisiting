@@ -1,0 +1,27 @@
+import java.util.TreeMap;
+
+public class StudentTreeMap {
+
+    static class Student {
+        String name;
+        int age;
+
+        Student(String name, int age) {
+            this.name = name;
+            this.age = age;
+        }
+
+        public String toString() {
+            return name + " " + age;
+        }
+    }
+
+    public static void main(String[] args) {
+        TreeMap<Integer, Student> map = new TreeMap<>();
+
+        map.put(101, new Student("Alice", 20));
+        map.put(102, new Student("Bob", 21));
+
+        System.out.println(map);
+    }
+}
